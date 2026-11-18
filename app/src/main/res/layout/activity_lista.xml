@@ -13,41 +13,34 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <!-- Barra superior -->
-        <LinearLayout
+        <!-- Titulo principal -->
+        <TextView
+            android:id="@+id/txtListaTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:text="@string/lista_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtListaTitulo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lista_titulo"
-                android:textColor="@color/texto_principal"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+        <!-- Boton del asistente IA -->
+        <Button
+            android:id="@+id/btnAsistenteIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/primario"
+            android:text="@string/lista_ia"
+            android:textColor="@android:color/white" />
 
-            <Button
-                android:id="@+id/btnPerfil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lista_perfil"
-                android:backgroundTint="@color/primario"
-                android:textColor="@android:color/white" />
-
-        </LinearLayout>
-
-        <!-- Estadísticas del jugador -->
+        <!-- Estadisticas -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:orientation="horizontal">
 
-            <!-- Tarjeta de XP -->
+            <!-- Tarjeta XP -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -76,7 +69,7 @@
 
             </LinearLayout>
 
-            <!-- Tarjeta de nivel -->
+            <!-- Tarjeta nivel -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -108,7 +101,7 @@
 
         </LinearLayout>
 
-        <!-- Sección de tareas -->
+        <!-- Desafios -->
         <TextView
             android:id="@+id/txtDesafios"
             android:layout_width="match_parent"
@@ -119,7 +112,7 @@
             android:textSize="21sp"
             android:textStyle="bold" />
 
-        <!-- Tarea 1 -->
+        <!-- Primera tarea -->
         <LinearLayout
             android:id="@+id/tarjetaTarea1"
             android:layout_width="match_parent"
@@ -127,7 +120,10 @@
             android:layout_marginTop="16dp"
             android:orientation="vertical"
             android:padding="20dp"
-            android:background="@color/fondo_tarjeta">
+            android:background="@color/fondo_tarjeta"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
 
             <TextView
                 android:id="@+id/txtTarea1"
@@ -149,7 +145,7 @@
 
         </LinearLayout>
 
-        <!-- Tarea 2 -->
+        <!-- Segunda tarea -->
         <LinearLayout
             android:id="@+id/tarjetaTarea2"
             android:layout_width="match_parent"
@@ -157,7 +153,10 @@
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             android:padding="20dp"
-            android:background="@color/fondo_tarjeta">
+            android:background="@color/fondo_tarjeta"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
 
             <TextView
                 android:id="@+id/txtTarea2"
@@ -179,7 +178,7 @@
 
         </LinearLayout>
 
-        <!-- Tarea 3 -->
+        <!-- Tercera tarea -->
         <LinearLayout
             android:id="@+id/tarjetaTarea3"
             android:layout_width="match_parent"
@@ -187,7 +186,10 @@
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             android:padding="20dp"
-            android:background="@color/fondo_tarjeta">
+            android:background="@color/fondo_tarjeta"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
 
             <TextView
                 android:id="@+id/txtTarea3"
@@ -209,7 +211,7 @@
 
         </LinearLayout>
 
-        <!-- Botón agregar tarea -->
+        <!-- Agregar tarea -->
         <Button
             android:id="@+id/btnAgregarTarea"
             android:layout_width="match_parent"

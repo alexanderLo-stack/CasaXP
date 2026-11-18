@@ -1,0 +1,157 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Nombre de la tarea -->
+        <TextView
+            android:id="@+id/txtDetalleTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detalle_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Dificultad -->
+        <TextView
+            android:id="@+id/txtDificultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/detalle_dificultad"
+            android:textColor="@color/secundario"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txtDetalleDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/detalle_descripcion"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp" />
+
+        <!-- Tarjeta del cronómetro -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:background="@color/fondo_tarjeta">
+
+            <!-- Contador -->
+            <TextView
+                android:id="@+id/txtCronometro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_cronometro"
+                android:textColor="@color/primario"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <!-- Tiempo objetivo -->
+            <TextView
+                android:id="@+id/txtTiempoObjetivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/detalle_tiempo"
+                android:textColor="@color/texto_principal"
+                android:textSize="15sp" />
+
+            <!-- Iniciar cronómetro -->
+            <Button
+                android:id="@+id/btnIniciarCronometro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/primario"
+                android:text="@string/detalle_iniciar"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Recompensa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtDetalleRecompensa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/detalle_recompensa"
+                android:textColor="@color/texto_principal"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtDetalleXP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_xp"
+                android:textColor="@color/secundario"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Finalizar tarea -->
+        <Button
+            android:id="@+id/btnFinalizarTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/secundario"
+            android:text="@string/detalle_finalizar"
+            android:textColor="@android:color/white" />
+
+        <!-- Acciones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditarTarea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/primario"
+                android:text="@string/detalle_editar"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnEliminarTarea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/primario"
+                android:text="@string/detalle_eliminar"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

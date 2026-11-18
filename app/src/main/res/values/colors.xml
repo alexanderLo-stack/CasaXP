@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores personalizados de CasaXP -->
+    <color name="primario">#6D28D9</color>
+    <color name="secundario">#14B8A6</color>
+    <color name="fondo">#F7F5FF</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#1F1833</color>
+
+</resources>
+

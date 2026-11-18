@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CasaXP" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorSecondary">@color/secundario</item>
+        <item name="android:statusBarColor">@color/fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CasaXP" parent="Base.Theme.CasaXP" />
+
+
+    <!-- Estilo personalizado CasaXP -->
+    <style name="TituloCasaXP">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto_principal</item>
+    </style>
+
+</resources>

@@ -1,0 +1,103 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Titulo -->
+        <TextView
+            android:id="@+id/txtIATitulo"
+            style="@style/TituloCasaXP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ia_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitulo -->
+        <TextView
+            android:id="@+id/txtIASubtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ia_subtitulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp" />
+
+        <!-- Pregunta -->
+        <TextView
+            android:id="@+id/txtIAPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/ia_pregunta"
+            android:textColor="@color/texto_principal"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Campo para escribir -->
+        <EditText
+            android:id="@+id/edtPreguntaIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/ia_hint"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="top"
+            android:padding="12dp" />
+
+        <!-- Boton preguntar -->
+        <Button
+            android:id="@+id/btnPreguntarIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/primario"
+            android:text="@string/ia_boton"
+            android:textColor="@android:color/white" />
+
+        <!-- Tarjeta de respuesta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/fondo_tarjeta">
+
+            <TextView
+                android:id="@+id/txtRespuestaTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ia_respuesta_titulo"
+                android:textColor="@color/secundario"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Respuesta de ejemplo -->
+            <TextView
+                android:id="@+id/txtRespuestaIA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/ia_respuesta"
+                android:textColor="@color/texto_principal"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

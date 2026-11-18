@@ -1,0 +1,8 @@
+
+<resources>
+    <color name="primario">#6D28D9</color>
+    <color name="secundario">#0F766E</color>
+    <color name="fondo">#14111F</color>
+    <color name="fondo_tarjeta">#242034</color>
+    <color name="texto_principal">#F8F6FF</color>
+</resources>

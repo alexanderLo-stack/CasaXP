@@ -1,0 +1,136 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtRegistroTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/registro_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtRegistroSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/registro_subtitulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp" />
+
+        <!-- Nombre de usuario -->
+        <EditText
+            android:id="@+id/edtRegistroUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="@string/registro_usuario"
+            android:inputType="textPersonName"
+            android:autofillHints="username" />
+
+        <!-- Correo -->
+        <EditText
+            android:id="@+id/edtRegistroCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/edtRegistroContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword" />
+
+        <!-- Confirmar contraseña -->
+        <EditText
+            android:id="@+id/edtRegistroConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/registro_confirmar"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword" />
+
+        <!-- Pregunta -->
+        <TextView
+            android:id="@+id/txtRegistroPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/registro_pregunta"
+            android:textColor="@color/texto_principal"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Opciones de juego -->
+        <RadioGroup
+            android:id="@+id/rgObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbOrganizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_opcion1"
+                android:textColor="@color/texto_principal"
+                android:buttonTint="@color/primario" />
+
+            <RadioButton
+                android:id="@+id/rbDesafios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_opcion2"
+                android:textColor="@color/texto_principal"
+                android:buttonTint="@color/primario" />
+
+        </RadioGroup>
+
+        <!-- Aceptar términos -->
+        <CheckBox
+            android:id="@+id/chkTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/registro_terminos"
+            android:textColor="@color/texto_principal"
+            android:buttonTint="@color/primario" />
+
+        <!-- Crear cuenta -->
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/primario"
+            android:text="@string/registro_crear"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

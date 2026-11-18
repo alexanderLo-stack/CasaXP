@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">CasaXP</string>
+    <string name="login_titulo">Bienvenido a CasaXP</string>
+    <string name="login_subtitulo">¡Convierte tus tareas en aventuras!</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Iniciar sesión</string>
+    <string name="registrarse">Crear cuenta</string>
+
+    <!-- Pantalla de Registro CasaXP -->
+    <string name="registro_titulo">Únete a CasaXP</string>
+    <string name="registro_subtitulo">¡Comienza tu aventura doméstica!</string>
+
+    <string name="registro_usuario">Nombre de usuario</string>
+    <string name="registro_confirmar">Confirmar contraseña</string>
+
+    <string name="registro_pregunta">¿Cuál es tu objetivo?</string>
+    <string name="registro_opcion1">Organizar mi hogar</string>
+    <string name="registro_opcion2">Completar desafíos</string>
+
+    <string name="registro_terminos">Acepto los términos y condiciones</string>
+    <string name="registro_crear">Crear mi cuenta</string>
+
+
+    <!-- Pantalla principal CasaXP -->
+    <string name="lista_titulo">Mis tareas</string>
+    <string name="lista_desafios">Desafíos de hoy</string>
+    <string name="lista_puntos">Puntos acumulados</string>
+    <string name="lista_nivel">Nivel</string>
+
+    <!-- Estadísticas de ejemplo -->
+    <string name="lista_xp_ejemplo">1.250 XP</string>
+    <string name="lista_nivel_ejemplo">5</string>
+
+    <!-- Tarea 1 -->
+    <string name="tarea_1">Lavar los platos</string>
+    <string name="tarea_1_info">15 min - 100 XP</string>
+
+    <!-- Tarea 2 -->
+    <string name="tarea_2">Barrer la casa</string>
+    <string name="tarea_2_info">20 min - 150 XP</string>
+
+    <!-- Tarea 3 -->
+    <string name="tarea_3">Limpiar el baño</string>
+    <string name="tarea_3_info">30 min - 200 XP</string>
+
+    <!-- Botones -->
+    <string name="lista_agregar">+ Agregar tarea</string>
+    <string name="lista_perfil">Perfil</string>
+
+
+    <!-- Pantalla Agregar tarea -->
+    <string name="agregar_titulo">Nueva tarea</string>
+    <string name="agregar_subtitulo">¡Prepara tu próximo desafío!</string>
+    <string name="agregar_nombre">Nombre de la tarea</string>
+    <string name="agregar_descripcion">Descripción de la tarea</string>
+    <string name="agregar_tiempo">Tiempo objetivo (minutos)</string>
+    <string name="agregar_prioridad">Prioridad</string>
+    <string name="prioridad_baja">Baja</string>
+    <string name="prioridad_media">Media</string>
+    <string name="prioridad_alta">Alta</string>
+    <string name="agregar_recompensa">Recompensa máxima</string>
+    <string name="agregar_xp">100 XP</string>
+    <string name="agregar_guardar">Guardar tarea</string>
+
+
+    <!-- Pantalla Detalle de tarea -->
+    <string name="detalle_titulo">Lavar los platos</string>
+    <string name="detalle_descripcion">Limpia los platos y deja la cocina ordenada.</string>
+    <string name="detalle_dificultad">Fácil</string>
+
+    <!-- Cronómetro -->
+    <string name="detalle_cronometro">00:00</string>
+    <string name="detalle_tiempo">Tiempo objetivo: 15 minutos</string>
+    <string name="detalle_iniciar">Iniciar cronómetro</string>
+
+    <!-- Recompensas -->
+    <string name="detalle_recompensa">Recompensa máxima</string>
+    <string name="detalle_xp">100 XP</string>
+
+    <!-- Acciones -->
+    <string name="detalle_finalizar">Finalizar tarea</string>
+    <string name="detalle_editar">Editar</string>
+    <string name="detalle_eliminar">Eliminar</string>
+
+
+    <!-- Asistente IA CasaXP -->
+    <string name="ia_titulo">Asistente CasaXP</string>
+    <string name="ia_subtitulo">Tu ayudante para organizar el hogar</string>
+    <string name="ia_pregunta">¿Qué necesitas organizar?</string>
+    <string name="ia_hint">Ej: Quiero limpiar toda mi casa</string>
+    <string name="ia_boton">Preguntar a la IA</string>
+    <string name="ia_respuesta_titulo">Respuesta del asistente</string>
+    <string name="ia_respuesta">¡Comencemos por la cocina! Después puedes ordenar el dormitorio y terminar con el baño.</string>
+
+
+
+</resources>

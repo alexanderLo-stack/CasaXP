@@ -1,0 +1,224 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Barra superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtListaTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lista_titulo"
+                android:textColor="@color/texto_principal"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lista_perfil"
+                android:backgroundTint="@color/primario"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Estadísticas del jugador -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <!-- Tarjeta de XP -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/fondo_tarjeta">
+
+                <TextView
+                    android:id="@+id/txtPuntosTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lista_puntos"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtPuntosValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lista_xp_ejemplo"
+                    android:textColor="@color/primario"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Tarjeta de nivel -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/fondo_tarjeta">
+
+                <TextView
+                    android:id="@+id/txtNivelTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lista_nivel"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txtNivelValor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/lista_nivel_ejemplo"
+                    android:textColor="@color/primario"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Sección de tareas -->
+        <TextView
+            android:id="@+id/txtDesafios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/lista_desafios"
+            android:textColor="@color/texto_principal"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <!-- Tarea 1 -->
+        <LinearLayout
+            android:id="@+id/tarjetaTarea1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/fondo_tarjeta">
+
+            <TextView
+                android:id="@+id/txtTarea1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tarea_1"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTarea1Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tarea_1_info"
+                android:textColor="@color/primario"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Tarea 2 -->
+        <LinearLayout
+            android:id="@+id/tarjetaTarea2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/fondo_tarjeta">
+
+            <TextView
+                android:id="@+id/txtTarea2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tarea_2"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTarea2Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tarea_2_info"
+                android:textColor="@color/primario"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Tarea 3 -->
+        <LinearLayout
+            android:id="@+id/tarjetaTarea3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@color/fondo_tarjeta">
+
+            <TextView
+                android:id="@+id/txtTarea3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tarea_3"
+                android:textColor="@color/texto_principal"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTarea3Info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tarea_3_info"
+                android:textColor="@color/primario"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Botón agregar tarea -->
+        <Button
+            android:id="@+id/btnAgregarTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/primario"
+            android:text="@string/lista_agregar"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
